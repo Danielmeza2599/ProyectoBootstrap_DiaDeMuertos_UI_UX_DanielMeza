@@ -18,9 +18,9 @@
     color: #FF9A00 !important; /* Color de texto para que contraste */
     font-weight: bold;
 }
-.navbar{
-    background-color: #1C1C1C !important; /* Usa la variable de Bootstrap redefinida */
-}
+
+
+
 .nav-item {
     font-family: 'Georgia', serif; /* Cambia la fuente */
     font-weight: bold;
