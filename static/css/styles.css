@@ -39,7 +39,9 @@
 /* 3. Estilos de un elemento específico para su estado */
 /* Cambia el color del enlace cuando el usuario pasa el mouse. */
 /* ---------------------------------------------------- */
-.nav-link.active {
+
+
+.nav-link:hover {
     background-color: #E4007C; /* Usa la variable de Bootstrap redefinida */
     color: #F5F5DC !important; /* Color de texto para que contraste */
     border-radius: 5px; /* Bordes redondeados */
