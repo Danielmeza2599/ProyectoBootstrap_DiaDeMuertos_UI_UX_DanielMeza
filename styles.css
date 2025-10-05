@@ -1,0 +1,46 @@
+/* ---------------------------------------------------- */
+/* 1. Redefinir variables globales de Bootstrap */
+/* Cambia los colores principales y secundarios de Bootstrap. */
+/* Cada vez que uses bg-primary, se usará este color. */
+/* ---------------------------------------------------- */
+:root {
+   /* --bs-primary: hsl(300, 21%, 54%);  
+    --bs-secondary: #F5F5DC; */
+}
+
+/* ---------------------------------------------------- */
+/* 2. Estilos específicos para un elemento de la página */
+/* Afecta a todos los elementos con la clase navbar-brand. */
+/* Se utiliza !important para asegurar la prioridad sobre Bootstrap. */
+/* ---------------------------------------------------- */
+.navbar-brand{
+    font-size: 1.1rem; /* Tamaño de fuente más grande */
+    color: #FF9A00 !important; /* Color de texto para que contraste */
+    font-weight: bold;
+}
+.navbar{
+    background-color: #1C1C1C !important; /* Usa la variable de Bootstrap redefinida */
+}
+.nav-item {
+    font-family: 'Georgia', serif; /* Cambia la fuente */
+    font-weight: bold;
+    /*font-size: 1.5rem; */
+    color: #cf7713 !important; /* Color de texto para que contraste */
+}
+
+.nav-link{
+    font-weight: bold;
+    font-size: 1rem; 
+    color: #FF9A00 !important; /* Color de texto para que contraste */
+    margin-right: 10px; /* Espacio entre enlaces */
+}
+
+/* ---------------------------------------------------- */
+/* 3. Estilos de un elemento específico para su estado */
+/* Cambia el color del enlace cuando el usuario pasa el mouse. */
+/* ---------------------------------------------------- */
+.nav-link.active {
+    background-color: #E4007C; /* Usa la variable de Bootstrap redefinida */
+    color: #F5F5DC !important; /* Color de texto para que contraste */
+    border-radius: 5px; /* Bordes redondeados */
+}
