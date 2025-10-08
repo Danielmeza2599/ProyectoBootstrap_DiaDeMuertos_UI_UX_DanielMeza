@@ -44,3 +44,26 @@
     color: #F5F5DC !important; /* Color de texto para que contraste */
     border-radius: 5px; /* Bordes redondeados */
 }
+
+/* ---------------------------------------------------- */
+body {
+    background-color: #000000; /* Color de fondo -> Negro Obsidiana */
+    color: #FF9A00; /* Color de texto Naranja Cempasúchil  */
+    font-family: 'Arial', sans-serif; /* Fuente predeterminada */
+    margin: 0;
+    padding: 0;
+}
+
+.centrador-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    background-color: #000000;
+}
+
+/* Contenedor para definir el tamaño pequeño */
+.video-wrapper {
+    width: 100%;
+    max-width: 800px; /* <-- este valor se ajusta  a un tamaño deseado */
+}
