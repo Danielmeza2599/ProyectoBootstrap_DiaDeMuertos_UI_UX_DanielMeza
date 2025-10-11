@@ -65,5 +65,6 @@ body {
 /* Contenedor para definir el tamaño pequeño */
 .video-wrapper {
     width: 100%;
-    max-width: 800px; /* <-- este valor se ajusta  a un tamaño deseado */
+    max-width: 650px; /* <-- este valor se ajusta  a un tamaño deseado */
+    margin-top: 0px;
 }
