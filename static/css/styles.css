@@ -1,65 +1,123 @@
-/* ---------------------------------------------------- */
-/* 1. Redefinir variables globales de Bootstrap */
-/* Cambia los colores principales y secundarios de Bootstrap. */
-/* Cada vez que uses bg-primary, se usará este color. */
-/* ---------------------------------------------------- */
+/*  
+    UI/UX
+    Daniel Meza
+    styles.css
+*/
+
+/*  IMPORTS Fonts and Icons - Google Font and Bootstrap*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap'); /* Cormorant Garamond - Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap'); /* Lora - Google Font*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");/* Iconos de Bootstrap */
+
+
+/* ---------------------------------------------------- 
+    ROOT VARIABLES
+    Definición de variables CSS para colores y fuentes.
+    Naranja Cempasúchil (#FF9A00)
+    Rosa Mexicano / Buganvilla (#E4007C)
+    Morado Místico (#8A2BE2)
+    Amarillo Calavera (#F7DC6F)
+    Negro Noche / Obsidiana (#1C1C1C)
+    Blanco Hueso (#F5F5DC)
+---------------------------------------------------- */
 :root {
-   /* --bs-primary: hsl(300, 21%, 54%);  
-    --bs-secondary: #F5F5DC; */
+    --primary-color: #FF9A00; /* Titulos y encabezados*/
+    --primary-color-dark-bg: #1C1C1C; /*Background, Fondo Principal*/
+    --primary-color-light: #F5F5DC; /* Texto parrafo sobre fondo oscuro*/
+    --secondary-color-cta: #E4007C; /* Botones y llamados a la Accion*/
+    --secondary-color-dark: #8A2BE2; /* iconos y detalles graficos*/
+    --secondary-color-light: #F7DC6F; /* iconos y detalles graficos*/
+    --font-Tittles: 'Cormorant Garamond', bold;
+    --font-secondary: 'Cormorant', serif;
 }
 
-/* ---------------------------------------------------- */
-/* 2. Estilos específicos para un elemento de la página */
-/* Afecta a todos los elementos con la clase navbar-brand. */
-/* Se utiliza !important para asegurar la prioridad sobre Bootstrap. */
-/* ---------------------------------------------------- */
+a.navbar-brand{
+    font-family: var(--font-Tittles);
+    font-size: 2rem;
+    
+
+}
+
+.container-fluid{
+    background-color: var(--primary-color-dark-bg);
+    
+}
+
+/* Header - Barra de navegacion */
+.nav{
+    position: fixed;
+}
+
 .navbar-brand{
-    font-size: 1.1rem; /* Tamaño de fuente más grande */
-    color: #FF9A00 !important; /* Color de texto para que contraste */
-    font-weight: bold;
+    font-size: 0.5rem; /* Tamaño de fuente más grande */
+    color: var(--primary-color) !important; /* Color de texto para que contraste */
+    img{
+        height: 100px; /* Ajustar la altura de la imagen según sea necesario */
+        width: auto; /* Mantiene la proporción de la imagen */
+        margin-right: 5px; /* Espacio entre la imagen y el texto */
+    }
 }
 
 
 
 .nav-item {
-    font-family: 'Georgia', serif; /* Cambia la fuente */
+    font-family: var(--font-secondary); /* Cambia la fuente */
     font-weight: bold;
     /*font-size: 1.5rem; */
-    color: #cf7713 !important; /* Color de texto para que contraste */
+    color: var(--primary-color); /* Color de texto para que contraste */
 }
 
-.nav-link{
+a.nav-link{
     font-weight: bold;
     font-size: 1rem; 
-    color: #FF9A00 !important; /* Color de texto para que contraste */
+    color: var(--primary-color); /* Color de texto para que contraste */
     margin-right: 10px; /* Espacio entre enlaces */
 }
 
-/* ---------------------------------------------------- */
-/* 3. Estilos de un elemento específico para su estado */
-/* Cambia el color del enlace cuando el usuario pasa el mouse. */
-/* ---------------------------------------------------- */
+/* Botones del navbar con llamado a la Accion*/
 .nav-link:hover {
-    background-color: #E4007C; /* Usa la variable de Bootstrap redefinida */
-    color: #F5F5DC !important; /* Color de texto para que contraste */
+    background-color: var(--secondary-color-cta); /* Usa la variable de Bootstrap redefinida */
+    color: var(--primary-color-light); /* Color de texto para que contraste */
     border-radius: 5px; /* Bordes redondeados */
 }
 
 /* ---------------------------------------------------- */
 body {
-    background-color: #000000; /* Color de fondo -> Negro Obsidiana */
-    color: #FF9A00; /* Color de texto Naranja Cempasúchil  */
-    font-family: 'Arial', sans-serif; /* Fuente predeterminada */
+    background-color: var(--secondary-color-dark); /* Color de fondo -> Negro Obsidiana */
+    color: var(--primary-color); /* Color de texto Naranja Cempasúchil  */
+    font-family: var(--font-secondary); /* Fuente predeterminada para todo el body */
     margin: 0;
     padding: 0;
 }
+
+/* blockquote container Centrado*/
+.blockquote {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* centrado vertical si se establece la altura */
+    padding: 15px;
+    margin: 0 auto;         /* centro dentro del padre */
+    text-align: center;     /* centrar el texto en el interior */
+}
+
+/* Limita el ancho del párrafo para que se ajuste a aproximadamente dos líneas.
+Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de línea deseados. */
+.blockquote p {
+    display: inline-block; /* Se encoge para ajustarse, por lo que el ancho máximo se aplica bien */
+    max-width: 700px;      /* Ancho que produce dos líneas en el escritorio */
+    width: 90%;            /* Responsivo: utiliza el 90% del contenido principal en pantallas pequeñas */
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
 
 .centrador-flex {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%; 
-    background-color: #000000;
+    background-color: #d8c9c9;
 }
 
 /* Contenedor para definir el tamaño pequeño */
