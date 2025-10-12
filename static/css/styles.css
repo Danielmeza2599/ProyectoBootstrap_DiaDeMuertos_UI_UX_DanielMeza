@@ -72,18 +72,21 @@ a.nav-link{
     font-size: 1rem; 
     color: var(--primary-color); /* Color de texto para que contraste */
     margin-right: 10px; /* Espacio entre enlaces */
+    transition: transform 0.4s ease, transform 0.5s ease-in-out; /* Transición suave para el efecto */
 }
 
 /* Botones del navbar con llamado a la Accion*/
 .nav-link:hover {
+    transform: scale(1.03); /* Efecto de agrandamiento al pasar el mouse */
     background-color: var(--secondary-color-cta); /* Usa la variable de Bootstrap redefinida */
     color: var(--primary-color-light); /* Color de texto para que contraste */
     border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold;
 }
 
 /* ---------------------------------------------------- */
 body {
-    background-color: var(--secondary-color-dark); /* Color de fondo -> Negro Obsidiana */
+    background-color: var(--primary-color-dark-bg); /* Color de fondo -> Negro Obsidiana */
     color: var(--primary-color); /* Color de texto Naranja Cempasúchil  */
     font-family: var(--font-secondary); /* Fuente predeterminada para todo el body */
     margin: 0;
@@ -111,18 +114,42 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     margin: 0;
 }
 
-
-.centrador-flex {
-    display: flex;
-    justify-content: center;
+#Inicio{
+    display: grid;
+    /* Se define una cuadrícula de 3 columnas. La columna central (2fr) 
+    será el doble de ancha que las laterales (1fr). */
+    grid-template-columns: 1fr 2fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px;
+    margin: 20px;
     align-items: center;
-    height: 100%; 
-    background-color: #d8c9c9;
+    #Inicio-1{
+        grid-column: 1 / 2; /* Ocupa la primera columna */
+        justify-self: center; /* Centra la tarjeta horizontalmente en su columna */
+        
+    }
+    #Inicio-2{
+        /* Se posiciona el video en la columna central */
+        grid-column: 2 / 3; /* Ocupa la segunda columna */   
+    }
+    #Inicio-3{
+        /* Se posiciona el segundo 'card' en la tercera columna */
+        grid-column: 3 / 4; /* Ocupa la tercera columna */ 
+        justify-self: center; /* Centra la tarjeta horizontalmente en su columna */  
+    }
+
+    /* Contenedor Flex para centrar el video */
+    .centrador-flex {  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /*se ajusta la altura según sea necesario */
+        background-color: var(--primary-color-dark-bg);
+    }
 }
 
 /* Contenedor para definir el tamaño pequeño */
 .video-wrapper {
     width: 100%;
-    max-width: 650px; /* <-- este valor se ajusta  a un tamaño deseado */
+    max-width: 650px; /* <-- este valor se ajusta */
     margin-top: 0px;
 }
