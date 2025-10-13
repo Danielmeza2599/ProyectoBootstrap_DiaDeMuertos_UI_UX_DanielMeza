@@ -147,6 +147,20 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         height: auto; /*se ajusta la altura según sea necesario */
         background-color: var(--primary-color-dark-bg);
     }
+
+    /* Estilos de las tarjetas */
+    .card {
+        font-family: var(--font-secondary); /* Fuente para el texto dentro de las tarjetas */
+        background-color: var(--secondary-color-light); /* Fondo de las tarjetas */
+        color: var(--primary-color-dark-bg); /* Color del texto dentro de las tarjetas */
+        font-weight: bold; /* Texto en negrita */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+    }
+    .card:hover {
+        transform: translateY(-10px); /* Efecto de elevación al pasar el mouse */
+    }
 }
 
 /* Contenedor para definir el tamaño pequeño */
