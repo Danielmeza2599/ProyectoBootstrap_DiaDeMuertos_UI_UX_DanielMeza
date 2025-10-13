@@ -114,6 +114,7 @@ body {
 
 /* blockquote container Centrado*/
 .blockquote {
+    background-color: var(--primary-color-dark-bg);
     display: flex;
     justify-content: center; /* Centrado horizontal */
     align-items: center;     /* centrado vertical si se establece la altura */
@@ -189,6 +190,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
 
 /* -- Origen --- */
 #Origen{
+    background-color: var(--primary-color-dark-bg);
     margin: 20px;
     padding: 50px;
     h2{
@@ -211,6 +213,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
 
 /* --- La Ofrenda --- */
 #Ofrenda{
+    background-color: var(--primary-color-dark-bg);
     margin: 20px;
     padding: 50px;
     h2{
@@ -236,6 +239,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     margin: 20px;
     padding: 50px;
     h2{
+        background-color: var(--primary-color-dark-bg);
         text-align: center;
         font-family: var(--font-Tittles);
         font-size: 2.5rem;
@@ -250,6 +254,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     margin: 20px;
     padding: 50px;
     h2{
+        background-color: var(--primary-color-dark-bg);
         text-align: center;
         font-family: var(--font-Tittles);
         font-size: 2.5rem;
@@ -258,6 +263,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         border-bottom: 2px solid var(--secondary-color-dark); /* Línea debajo del título */
     } 
     p{
+        background-color: var(--primary-color-dark-bg);
         text-align: center;
         font-family: var(--font-secondary);
         font-size: 1.2rem;
@@ -265,6 +271,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         margin-bottom: 20px;
     }
     ul{
+        background-color: var(--primary-color-dark-bg);
         list-style-type: none; /* Elimina los puntos de la lista */
         padding: 0; /* Elimina el padding por defecto */
         max-width: 600px; /* Limita el ancho máximo para mejor legibilidad */
@@ -290,12 +297,14 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         text-align: center;
         margin-top: 30px;
         h3{
+            background-color: var(--primary-color-dark-bg);
             font-family: var(--font-Tittles);
             font-size: 2rem;
             color: var(--primary-color);
             margin-bottom: 10px;
         }
         p{
+            background-color: var(--primary-color-dark-bg);
             font-family: var(--font-secondary);
             font-size: 1.2rem;
             color: var(--primary-color);
