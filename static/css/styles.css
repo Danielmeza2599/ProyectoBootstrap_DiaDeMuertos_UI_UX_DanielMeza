@@ -88,12 +88,29 @@ a.nav-link{
 
 /* ---------------------------------------------------- */
 body {
-    background-color: var(--primary-color-dark-bg); /* Color de fondo -> Negro Obsidiana */
+  /*  background-color: var(--primary-color-dark-bg); *//* Color de fondo -> Negro Obsidiana */
     color: var(--primary-color); /* Color de texto Naranja Cempasúchil  */
     font-family: var(--font-secondary); /* Fuente predeterminada para todo el body */
     margin: 0;
     padding: 0;
+    
+    /* Parallax seccion */
+    position: relative;
+    opacity: 0.9;
+    /* Cambiar URL por la imagen de Dia DEmuertos */
+    background-image: url("../images/Parallax.png");
+
+    /* Altura del contenedor de la imagen */
+    height: 500px; 
+
+    /* Propiedades para crear el efecto parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
 
 /* blockquote container Centrado*/
 .blockquote {
