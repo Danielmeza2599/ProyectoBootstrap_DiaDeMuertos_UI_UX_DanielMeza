@@ -156,6 +156,50 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     margin-top: 0px;
 }
 
+/* -- Origen --- */
+#Origen{
+    margin: 20px;
+    padding: 50px;
+    h2{
+        text-align: center;
+        font-family: var(--font-Tittles);
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+        border-bottom: 2px solid var(--secondary-color-dark); /* Línea debajo del título */
+    } 
+    p{
+        text-align: center;
+        font-family: var(--font-secondary);
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+    }
+}
+
+
+/* --- La Ofrenda --- */
+#Ofrenda{
+    margin: 20px;
+    padding: 50px;
+    h2{
+        text-align: center;
+        font-family: var(--font-Tittles);
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+        border-bottom: 2px solid var(--secondary-color-dark); /* Línea debajo del título */
+    } 
+    p{
+        text-align: center;
+        font-family: var(--font-secondary);
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+    }
+}
+
+
 /* --- Galeria --- */
 #Galeria{
     margin: 20px;
@@ -166,6 +210,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         font-size: 2.5rem;
         color: var(--primary-color);
         margin-bottom: 10px;
+        border-bottom: 2px solid var(--secondary-color-dark); /* Línea debajo del título */
     } 
 }
 
@@ -179,6 +224,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         font-size: 2.5rem;
         color: var(--primary-color);
         margin-bottom: 10px;
+        border-bottom: 2px solid var(--secondary-color-dark); /* Línea debajo del título */
     } 
     p{
         text-align: center;
@@ -207,5 +253,29 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         text-decoration: underline; /* Subrayado al pasar el mouse */
         transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
         font-weight: bold;
+    }
+
+    .mapa{
+        text-align: center;
+        margin-top: 30px;
+        h3{
+            font-family: var(--font-Tittles);
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        p{
+            font-family: var(--font-secondary);
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        iframe{
+            margin-top: 10px;
+            border: 10px solid var(--primary-color); /* Borde alrededor del mapa */
+            border-radius: 10px; /* Bordes redondeados */
+            max-width: 100%; /* Hace que el iframe sea responsivo */
+            
+        }
     }
 }
