@@ -96,7 +96,7 @@ body {
     
     /* Parallax seccion */
     position: relative;
-    opacity: 0.9;
+    opacity: 1;
     /* Cambiar URL por la imagen de Dia DEmuertos */
     background-image: url("../images/Parallax.png");
 
@@ -172,6 +172,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         background-color: var(--secondary-color-light); /* Fondo de las tarjetas */
         color: var(--primary-color-dark-bg); /* Color del texto dentro de las tarjetas */
         font-weight: bold; /* Texto en negrita */
+        border: solid 2px var(--secondary-color-dark); /* Borde de las tarjetas */
         border-radius: 10px; /* Bordes redondeados */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
         transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
@@ -317,5 +318,54 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
             max-width: 100%; /* Hace que el iframe sea responsivo */
             
         }
+    }
+
+    /* formulario */
+    .formulario{
+        background-color: var(--primary-color-dark-bg);
+        max-width: 600px; /* Limita el ancho máximo del formulario */
+        margin: 0 auto; /* Centra el formulario horizontalmente */
+        padding: 20px;
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    }
+    .mb-3 label{
+        font-family: var(--font-secondary);
+        color: var(--primary-color); /* Color del texto de las etiquetas */
+        font-weight: bold;
+    }
+    .mb-3 input{
+        font-family: var(--font-secondary);
+        color: var(--primary-color-dark-bg); /* Color del texto dentro de los campos */
+        font-weight: bold;
+        background-color: var(--primary-color-light); /* Fondo de los campos */
+    }
+
+    .mb-3:focus:invalid{
+    background-color: #661010;
+    }
+
+    .mb-3:focus:valid{
+        background-color: #94da9b;
+    }
+
+    .btn-primary{
+        background-color: var(--secondary-color-cta); /* Fondo del botón */
+        color: var(--primary-color-light); /* Color del texto del botón */
+        font-family: var(--font-secondary);
+        font-weight: bold;
+        padding: 10px 20px; /* Espaciado interno */
+        margin: 15px auto; /* Margen superior e inferior, centrado horizontal */
+        border: none; /* Sin borde */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el efecto */
+        align-items: center;
+        display: block; /* Hace que el botón sea un bloque para centrarlo */
+    }
+
+    .btn-primary:hover{
+        background-color: var(--primary-color); /* Cambia el color de fondo al pasar el mouse */
+        color: var(--primary-color-dark-bg); /* Cambia el color del texto al pasar el mouse */
+        transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+        font-weight: bold;
     }
 }
