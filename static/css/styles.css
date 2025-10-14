@@ -369,3 +369,32 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         font-weight: bold;
     }
 }
+
+
+/* Efectos */
+@keyframes aparecer{
+  from{
+    filter: blur(0.5rem);
+  }
+  to{
+    filter: blur(0);
+  }
+}
+
+@keyframes mover{
+  from{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to{
+    opacacity: 3;
+    transform: translateY(0);
+  }
+}
+
+/* Animaciones */
+.navbar-brand, a.nav-link, .blockquote, #Inicio, #Origen, #Ofrenda, #Galeria, #Recursos{
+  animation: aparecer 2.5s ease-in, aparecer 3s ease-in-out;
+  animation: mover 2.5s ease-in, mover 3s ease-in-out;
+}
+/* Fin de Animaciones */
