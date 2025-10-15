@@ -37,8 +37,9 @@
 a.navbar-brand{
     font-family: var(--font-Tittles);
     font-size: 2rem;
-    
-
+    display: inline-flex; /* allow image and text alignment */
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .container-fluid{
@@ -52,13 +53,14 @@ a.navbar-brand{
 }
 
 .navbar-brand{
-    font-size: 0.5rem; /* Tamaño de fuente más grande */
+    /* default for larger screens (overridden by a.navbar-brand above) */
     color: var(--primary-color) !important; /* Color de texto para que contraste */
-    img{
-        height: 100px; /* Ajustar la altura de la imagen según sea necesario */
-        width: auto; /* Mantiene la proporción de la imagen */
-        margin-right: 5px; /* Espacio entre la imagen y el texto */
-    }
+}
+
+.navbar-brand img{
+    height: 100px; /* Ajustar la altura de la imagen según sea necesario */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
 }
 
 
@@ -401,6 +403,15 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
+    .navbar-brand{
+        font-size: 0.9rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+    /* Reducir el tamaño de la imagen en pantallas pequeñas */
+    .navbar-brand img{
+        height: 60px; /* Ajusta la altura de la imagen para móviles */
+        width: auto;
+        margin-right: 5px;
+    }
     #Inicio{
         display: block; /* Cambia a un diseño de bloque para pantallas pequeñas */
         padding: 10px;
