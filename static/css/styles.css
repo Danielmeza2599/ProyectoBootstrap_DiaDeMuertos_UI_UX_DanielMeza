@@ -398,3 +398,27 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
   animation: mover 2.5s ease-in, mover 3s ease-in-out;
 }
 /* Fin de Animaciones */
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    #Inicio{
+        display: block; /* Cambia a un diseño de bloque para pantallas pequeñas */
+        padding: 10px;
+        #Inicio-1, #Inicio-2, #Inicio-3{
+            grid-column: auto; /* Cada sección ocupa todo el ancho */
+            margin-bottom: 20px; /* Espacio entre las secciones */
+        }
+        .video-wrapper {
+            max-width: 100%; /* El video ocupa todo el ancho disponible */
+        }
+    }
+    .card {
+        font-size: 1rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+    h2{
+        font-size: 2rem; /* Ajusta el tamaño de los títulos para pantallas pequeñas */
+    }
+    p{
+        font-size: 1rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+}
