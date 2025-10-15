@@ -31,7 +31,7 @@
     --secondary-color-dark: #8A2BE2; /* iconos y detalles graficos*/
     --secondary-color-light: #F7DC6F; /* iconos y detalles graficos*/
     --font-Tittles: 'Cormorant Garamond', bold;
-    --font-secondary: 'Cormorant', serif;
+    --font-secondary: 'Lora', serif;
 }
 
 a.navbar-brand{
