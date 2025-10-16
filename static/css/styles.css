@@ -512,7 +512,7 @@ footer{
         background-color: var(--secondary-color-cta);
         text-decoration: none;
         transform: scale(1.09); /* Efecto de agrandamiento al pasar el mouse */
-        .fa-download{
+        .fa-upload{
             color: var(--primary-color-light);
         }
     }
