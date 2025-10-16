@@ -192,7 +192,6 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
 
 /* -- Origen --- */
 #Origen{
-    
     margin: 20px;
     padding: 50px;
     h2{
@@ -216,9 +215,12 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     /* Contenedor para centrar la tarjeta */
     .card-container {
         width: 400px;
-        height: 450px;
+        height: 500px;
         perspective: 1000px; /* Esencial para el efecto 3D */
         margin: 50px auto; /* Centra el contenedor */
+        display: block; /* Asegura que el contenedor sea un bloque */
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
     }
 
     /* La tarjeta que girará */
@@ -240,7 +242,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
 
     /* Estilos para las caras frontal y trasera */
     .card-front, .card-back {
-        position: absolute;
+        position: absolute; /* Posicionamiento absoluto para superponer las caras */
         width: 100%;
         height: 100%;
         backface-visibility: hidden; /* Oculta la cara trasera cuando no está visible */
