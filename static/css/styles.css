@@ -233,6 +233,9 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         cursor: pointer;
         font-size: 1.1rem; /* Tamaño de fuente para el texto dentro de la tarjeta */
         border-radius: 15px; /* Bordes redondeados */
+        display: block;
+        justify-self: center; /* Centra la foto horizontalmente en su columna */
+        
     }
 
     /* Clase que se añade con JavaScript para girar la tarjeta */
@@ -248,6 +251,8 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         backface-visibility: hidden; /* Oculta la cara trasera cuando no está visible */
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        display: block;
+        justify-self: center; /* Centra la foto horizontalmente en su columna */
     }
 
     /* Estilo de la cara frontal */
@@ -258,6 +263,8 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         border-radius: 15px;
         transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el efecto */
         border: solid 4px var(--secondary-color-cta); /* Borde alrededor de la imagen */
+        display: block;
+        justify-self: center; /* Centra la foto horizontalmente en su columna */
    
     }
 
@@ -454,10 +461,8 @@ footer{
         height: 300px;
         border-radius: 10%;
         border: solid var(--secondary-color-dark);
-        margin-left: 6rem;
-        align-items: center;
-        align-self: center;
-        align-content: center;
+        display: block;
+        justify-self: center; /* Centra la foto horizontalmente en su columna */
     }
 
     /* Contact Info */
@@ -619,5 +624,17 @@ footer{
     }
     p{
         font-size: 1rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+    #Origen{
+        display: block; /* Cambia a un diseño de bloque para pantallas pequeñas */
+        padding: 5px;
+        grid-column: auto; /* Cada sección ocupa todo el ancho */
+        font-size: 1rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        max-width: 100%;
+        justify-items: center;
+        justify-self: center;
+        align-items: center;
+        margin-right: 35px;
+       
     }
 }
