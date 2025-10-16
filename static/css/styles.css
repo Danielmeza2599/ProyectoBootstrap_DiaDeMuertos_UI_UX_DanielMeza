@@ -438,6 +438,128 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     }
 }
 
+/* Footer seccion */
+footer{
+    background-color: var(--primary-color-dark-bg);
+    text-align: center;
+    padding: 20px;
+    color: var(--primary-color); /* Color del texto del footer */
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    border-top: 2px solid var(--secondary-color-dark); /* Línea arriba del footer */
+
+    /* Profile Image */
+    img.profile-image {
+        width: 240px;
+        height: 300px;
+        border-radius: 10%;
+        border: solid var(--secondary-color-dark);
+        margin-left: 6rem;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+
+    /* Contact Info */
+    .contact-info{
+        margin-top: 2rem 0;
+        
+    }
+    .contact-info p
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        color: var(--primary-color);
+        margin: 8px 0;
+    }
+    .contact-info i {
+        margin-right: 8px;
+        color: var(--primary-color);
+        font-size: 1.1em;
+    }
+    .contact-info .email-link {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .contact-info .email-link:hover {
+        color: var(--secondary-color-cta);
+        text-decoration: underline;
+    }
+
+    /* Contact CV Downloadable */
+    .contact-info .btn-download{
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1em;
+        transition: background-color 0.5s ease, transform 0.5s ease; /* Transición suave para el efecto */
+    }
+
+    .contact-info .btn-download i {
+        margin-right: 8px;
+        color: var(--primary-color);
+        font-size: 1.1em;
+    }
+
+    .contact-info .btn-download:hover {
+        color: var(--primary-color-light);
+        background-color: var(--secondary-color-cta);
+        text-decoration: none;
+        transform: scale(1.09); /* Efecto de agrandamiento al pasar el mouse */
+        .fa-download{
+            color: var(--primary-color-light);
+        }
+    }
+
+    /* Social List Links */
+    .social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    margin-bottom: 1px;
+    }
+
+    .social-item .social-link {
+    color: #adb0b3;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el efecto */
+    }
+
+    
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 1px;
+    }
+
+    .social-links a {
+        color: var(--primary-color);
+        font-size: 1.6em;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el efecto */
+
+    }
+
+    .social-links a:hover {
+        color: var(--secondary-color-cta);
+        transform: scale(1.09); /* Efecto de agrandamiento al pasar el mouse */ 
+    }
+}
+
 
 /* Efectos */
 @keyframes aparecer{
