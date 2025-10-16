@@ -43,8 +43,7 @@ a.navbar-brand{
 }
 
 .container-fluid{
-    background-color: var(--primary-color-dark-bg);
-    
+    background-color: var(--primary-color-dark-bg); /* Fondo de la barra de navegacion */
 }
 
 /* Header - Barra de navegacion */
@@ -329,7 +328,6 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         margin: 0 auto; /* Centra el formulario horizontalmente */
         padding: 20px;
         border-radius: 10px; /* Bordes redondeados */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     }
     .mb-3 label{
         font-family: var(--font-secondary);
@@ -343,12 +341,12 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         background-color: var(--primary-color-light); /* Fondo de los campos */
     }
 
-    .mb-3:focus:invalid{
-    background-color: #661010;
+    .form-control:focus:invalid{
+    background-color: #b14e4e; /* Color de fondo rojo si el campo es inválido */
     }
 
-    .mb-3:focus:valid{
-        background-color: #94da9b;
+    .form-control:focus:valid{
+        background-color: #94da9b;/* Color de fondo verde si el campo es válido */
     }
 
     .btn-primary{
