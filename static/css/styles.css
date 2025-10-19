@@ -73,17 +73,19 @@ a.navbar-brand{
 a.nav-link{
     font-weight: bold;
     font-size: 1rem; 
-    color: var(--primary-color); /* Color de texto para que contraste */
+    color: var(--primary-color-light); /* Color de texto para que contraste */
     margin-right: 10px; /* Espacio entre enlaces */
     transition: transform 0.4s ease, transform 0.5s ease-in-out; /* Transición suave para el efecto */
+    background-color: var(--secondary-color-cta);
+    border-radius: 15px;
 }
 
 /* Botones del navbar con llamado a la Accion*/
 .nav-link:hover {
     transform: scale(1.03); /* Efecto de agrandamiento al pasar el mouse */
-    background-color: var(--secondary-color-cta); /* Usa la variable de Bootstrap redefinida */
-    color: var(--primary-color-light); /* Color de texto para que contraste */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: var(--primary-color-light); /* Usa la variable de Bootstrap redefinida */
+    color: var(--secondary-color-cta); /* Color de texto para que contraste */
+    border-radius: 15px; /* Bordes redondeados */
     font-weight: bold;
 }
 
@@ -97,7 +99,7 @@ body {
     
     /* Parallax seccion */
     position: relative;
-    opacity: 1;
+    opacity: 3;
     /* Cambiar URL por la imagen de Dia DEmuertos */
     background-image: url("../images/Parallax.png");
 
@@ -305,7 +307,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         text-align: center;
         font-family: var(--font-secondary);
         font-size: 1.2rem;
-        color: var(--primary-color);
+        color: var(--primary-color-light);
         margin-bottom: 20px;
     }
 
@@ -326,7 +328,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         background-color: var(--primary-color-dark-bg);
         font-family: var(--font-secondary);
         ul{
-            color: var(--primary-color);
+            color: var(--primary-color-light);
             span{
                 font-weight: bold;
             }
@@ -371,7 +373,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         text-align: center;
         font-family: var(--font-secondary);
         font-size: 1.2rem;
-        color: var(--primary-color);
+        color: var(--primary-color-light);
         margin-bottom: 20px;
     }
     ul{
@@ -411,7 +413,7 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
             background-color: var(--primary-color-dark-bg);
             font-family: var(--font-secondary);
             font-size: 1.2rem;
-            color: var(--primary-color);
+            color: var(--primary-color-light);
             margin-bottom: 20px;
         }
         iframe{
@@ -544,7 +546,7 @@ footer{
         background-color: var(--secondary-color-cta);
         text-decoration: none;
         transform: scale(1.09); /* Efecto de agrandamiento al pasar el mouse */
-        .fa-upload{
+        .fa-eye{
             color: var(--primary-color-light);
         }
     }
