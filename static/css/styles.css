@@ -197,13 +197,14 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     margin: 20px;
     padding: 50px;
     h2{
-        background-color: var(--primary-color-dark-bg);
+        background-color: none;
         text-align: center;
         font-family: var(--font-Tittles);
         font-size: 2.5rem;
-        color: var(--primary-color);
+        color: var(--primary-color-light);
         margin-bottom: 10px;
         border-bottom: 2px solid var(--secondary-color-dark); /* Línea debajo del título */
+        font-weight: bold;
     } 
     p{
         text-align: center;
@@ -295,13 +296,14 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     margin: 20px;
     padding: 50px;
     h2{
-        background-color: var(--primary-color-dark-bg);
+        background-color: none;
         text-align: center;
         font-family: var(--font-Tittles);
         font-size: 2.5rem;
-        color: var(--primary-color);
+        color: var(--primary-color-light);
         margin-bottom: 10px;
         border-bottom: 2px solid var(--secondary-color-dark); /* Línea debajo del título */
+        font-weight: bold;
     } 
     p{
         text-align: center;
@@ -345,13 +347,22 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     margin: 20px;
     padding: 50px;
     h2{
-        background-color: var(--primary-color-dark-bg);
+        background-color: none;
         text-align: center;
         font-family: var(--font-Tittles);
         font-size: 2.5rem;
-        color: var(--primary-color);
+        color: var(--primary-color-light);
         margin-bottom: 10px;
         border-bottom: 2px solid var(--secondary-color-dark); /* Línea debajo del título */
+        font-weight: bold;
+    }
+    img{
+        display: block;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        align-content: center;
+        max-width: 100%;
     } 
 }
 
@@ -360,16 +371,17 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     margin: 20px;
     padding: 50px;
     h2{
-        background-color: var(--primary-color-dark-bg);
+        background-color: none;
         text-align: center;
         font-family: var(--font-Tittles);
         font-size: 2.5rem;
-        color: var(--primary-color);
+        color: var(--primary-color-light);
         margin-bottom: 10px;
         border-bottom: 2px solid var(--secondary-color-dark); /* Línea debajo del título */
+        font-weight: bold;
     } 
     p{
-        background-color: var(--primary-color-dark-bg);
+        background-color: none;
         text-align: center;
         font-family: var(--font-secondary);
         font-size: 1.2rem;
@@ -379,9 +391,10 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
     ul{
         background-color: var(--primary-color-dark-bg);
         list-style-type: none; /* Elimina los puntos de la lista */
-        padding: 0; /* Elimina el padding por defecto */
+        padding: 8px; /* Elimina el padding por defecto */
         max-width: 600px; /* Limita el ancho máximo para mejor legibilidad */
         margin: 0 auto; /* Centra la lista horizontalmente */
+        border: solid 2px var(--secondary-color-dark);
     }
     li{
         margin-bottom: 10px; /* Espacio entre los elementos de la lista */
@@ -403,14 +416,15 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         text-align: center;
         margin-top: 30px;
         h3{
-            background-color: var(--primary-color-dark-bg);
+            background-color: none;
             font-family: var(--font-Tittles);
             font-size: 2rem;
-            color: var(--primary-color);
+            color: var(--primary-color-light);
             margin-bottom: 10px;
+            font-weight: bold;
         }
         p{
-            background-color: var(--primary-color-dark-bg);
+            background-color: none;
             font-family: var(--font-secondary);
             font-size: 1.2rem;
             color: var(--primary-color-light);
@@ -633,6 +647,19 @@ footer{
         height: 60px; /* Ajusta la altura de la imagen para móviles */
         width: auto;
         margin-right: 5px;
+    }
+    .nav-item{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding: 5px;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .nav-link{
+        font-size: 1.2rem;
     }
     #Inicio{
         display: block; /* Cambia a un diseño de bloque para pantallas pequeñas */
