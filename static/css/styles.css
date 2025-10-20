@@ -356,14 +356,14 @@ Ajusta el ancho máximo para adaptarlo al tamaño de fuente y a los saltos de l�
         border-bottom: 2px solid var(--secondary-color-dark); /* Línea debajo del título */
         font-weight: bold;
     }
+    /* Imágenes dentro de la galería */
     img{
-        display: block;
-        justify-content: center;
-        align-self: center;
-        align-items: center;
-        align-content: center;
-        max-width: 100%;
-    } 
+        display: block; /* Para que los márgenes funcionen */
+        max-width: 400px; /* ancho máximo que definido*/
+        /* Márgenes automáticos para centrar la imagen horizontalmente */
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* --- Recursos --- */

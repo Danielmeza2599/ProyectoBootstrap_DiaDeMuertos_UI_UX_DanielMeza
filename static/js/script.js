@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Personalizar mensaje con el nombre si está presente
                 const nameInput = form.querySelector('#formGroupExampleInput');
                 const name = nameInput && nameInput.value ? nameInput.value.trim() : '';
-                msg.textContent = name ? `Gracias, ${name}. Tu mensaje fue enviado.` : 'Gracias. Tu mensaje fue enviado.';
+                msg.textContent = name ? `¡Gracias! ${name}. Tu mensaje fue enviado.` : 'Gracias. Tu mensaje fue enviado.';
 
                 // Limpiar formulario
                 form.reset();
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 clearTimeout(msg._hideTimeout);
                 msg._hideTimeout = setTimeout(() => {
                     if (msg && msg.parentNode) msg.parentNode.removeChild(msg);
-                }, 5000);
+                }, 10000);
             });
         }
     }
